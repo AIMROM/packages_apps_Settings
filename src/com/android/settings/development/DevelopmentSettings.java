@@ -89,6 +89,7 @@ import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
+import com.android.settings.AnimationScalePreference;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
