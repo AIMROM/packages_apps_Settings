@@ -136,6 +136,9 @@ import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
+import com.android.settings.aim.navbar.FlingSettings;
+import com.android.settings.aim.navbar.SmartbarSettings;
+
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
@@ -379,6 +382,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             freedomhub.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName()
     };
 
 
