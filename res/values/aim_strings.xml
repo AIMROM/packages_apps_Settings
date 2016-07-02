@@ -30,4 +30,7 @@
     <!-- Running services -->
     <string name="background_processes_settings_title">Background processes</string>
 
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
 </resources>
