@@ -149,4 +149,9 @@
      <string name="app_ops_answer_phone_calls">answer calls</string>
      <string name="app_ops_boot_completed">auto start</string> 
 
+<!-- Reset battery stats -->
+     <string name="ok">Ok</string>
+     <string name="menu_stats_reset">Reset stats</string>
+     <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+
 </resources>
