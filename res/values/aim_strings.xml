@@ -132,4 +132,8 @@
      <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
      <string name="expanded_desktop_title">Expanded desktop options</string>
 
+<!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+ 	
 </resources>
