@@ -76,4 +76,7 @@
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
+   <!-- Reset default wallpaper -->
+    <string name="reset_wallpaper_notice">Default wallpaper restored</string>
+
 </resources>
