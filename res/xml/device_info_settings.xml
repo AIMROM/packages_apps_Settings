@@ -17,17 +17,23 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-      <!-- Aim Rom Banner -->
-      <Preference 
-             android:layout="@layout/banner"
-             android:key="od_banner" />  
+      <!-- Aim Rom Banner  -->
+      <PreferenceScreen
+           android:layout="@layout/banner" 
+           android:key="od_banner" />  
 
-      <!-- aim version -->
+         <!-- About Devs -->
       <Preference
-             android:key="aim_version"
-             android:title="@string/aim_version"
-             android:summary="@string/aim_version_default" />
-
+          android:key="dev_info"
+          android:title="@string/dev_info"
+          android:fragment="com.android.settings.Aboutaimrom" />
+       
+	<!-- aim version -->
+         <Preference
+                 android:key="aim_version"
+                 android:title="@string/aim_version"
+                 android:summary="@string/device_info_default" />
+ 
       <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
