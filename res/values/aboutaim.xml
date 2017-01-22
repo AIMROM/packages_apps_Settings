@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- Copyright (C) 2017 AIMROM
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+      You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- About AIM ROM -->
+     <string name="AIMROM_about_info">About Us</string>
+     <string name="dev_info_summary">Everything about AIMROM and its TEAM</string>
+     <string name="AIMROM_about_info_summary">AIMROM is an aftermarket firmware based on AOSP, with some added extras along the way.We are targeting a ROM that delivers exceptional performance, a balance of features,and a remarkable battery life</string>
+     <string name="dev_info">About AIMROM</string>
+     <string name="devs_header">MEET THE TEAM</string>
+     <string name="dev_1"> Emmanuel N. D. DENLINGER</string>
+     <string name="dev1_description">Founder/Project Maintainer</string>
+     <string name="dev_2">Anand Ramachandran (Anandnv)</string>
+     <string name="dev2_description">Co-Founder/Head Developer, Z010D maintainer</string>
+     <string name="dev_3">Raman Verma (Shadowreaper1)</string>
+     <string name="dev3_description">Lead Developer, Z010D Maintainer</string>
+ 
+     <!-- Social -->
+     <string name="social_header">#Lets Aim-ify</string>
+     <string name="AIMROM_web">Website</string>
+     <string name="AIMROM_web_description">Official AIM ROM website for Infos and more.</string>
+     <string name="AIMROM_web_link">http://www.aimrom.com</string>
+     <string name="AIMROM_google_plus">Google</string>
+     <string name="AIMROM_google_plus_description">Our official Google page with latest news and updates of the ROM.</string>
+     <string name="AIMROM_google_plus_link">https://plus.google.com/communities/111507505190229665939</string>
+     <string name="AIMROM_telegram">Telegram</string>
+     <string name="AIMROM_telegram_description">Discussion group for AIM ROM.</string>
+     <string name="AIMROM_telegram_link">https://t.me/joinchat/EFeeN0GlvTieeq_QyPB1JA</string>
+     <string name="AIMROM_github">Github</string>
+     <string name="AIMROM_github_description">We are open source!</string>
+     <string name="AIMROM_github_link">https://github.com/AIMROM/</string>
+<!-- DONATE US PLOX -->
+     <string name="donate">Show your support</string>
+     <string name="donate_description">Donation is not necessary, but each and every penny from you will help us to pay server bills.</string>
+     <string name="donation_link">https://paypal.me/AIMroms</string>
+  
+
+
+ </resources>

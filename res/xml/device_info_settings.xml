@@ -18,9 +18,17 @@
         android:title="@string/about_settings">
 
       <!-- Aim Rom Banner -->
-      <PreferenceScreen android:layout="@layout/banner" android:key="od_banner" />  
+      <PreferenceScreen 
+           android:layout="@layout/banner" 
+           android:key="od_banner" />  
 
-      <!-- aim version -->
+         <!-- About Devs -->
+      <Preference
+          android:key="dev_info"
+          android:title="@string/dev_info"
+          android:fragment="com.android.settings.Aboutaimrom" />
+       
+	<!-- aim version -->
          <Preference
                  android:key="aim_version"
                  android:title="@string/aim_version"
