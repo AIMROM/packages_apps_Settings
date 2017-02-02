@@ -180,4 +180,6 @@ public class Settings extends SettingsActivity {
     public static class FreedomhubActivity extends SettingsActivity {}
 
     public static class GamingModeActivity extends SettingsActivity {}
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
 }
