@@ -203,4 +203,6 @@ public class Settings extends SettingsActivity {
      public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
      public static class PulseSettingsActivity extends SettingsActivity { /* empty */ }
 
+    // Abc Additions.
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
