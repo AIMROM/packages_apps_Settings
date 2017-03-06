@@ -60,4 +60,9 @@
     <!-- Freedom Hub -->
     <string name="freedom_hub_title">Freedom Hub</string>
     <string name="header_category_freedom">Customization</string>
+
+    <!-- This only shows if Magisk is installed -->
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Root management</string>
+
 </resources>
