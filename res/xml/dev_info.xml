@@ -193,13 +193,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/main_14"
             android:summary="@string/main14_description"
             android:icon="@drawable/ic_devs_phone">     
-      
+     </PreferenceScreen> 
+     
   <PreferenceScreen
             android:title="@string/main_15"
             android:summary="@string/main15_description"
             android:icon="@drawable/ic_devs_phone">
  </PreferenceScreen>
  
-   </PreferenceCategory>
+</PreferenceCategory>
 
 </PreferenceScreen>
