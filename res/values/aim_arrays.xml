@@ -57,8 +57,8 @@
      </string-array>
  
      <string-array name="systemui_navbar_settings_fragments" translatable="false">
-         <item>com.android.settings.rr.SmartbarSettings</item>
-         <item>com.android.settings.rr.FlingSettings</item>
+         <item>com.android.settings.aim.navbar.SmartbarSettings</item>
+         <item>com.android.settings.aim.navbar.FlingSettings</item>
      </string-array>
  
      <string-array name="systemui_navbar_mode_settings">
