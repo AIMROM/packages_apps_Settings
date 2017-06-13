@@ -93,6 +93,7 @@
     <string name="night_mode_no">Light</string>
     <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_yes">Dark</string>
+    <string name="aim_theme_summary">AIM Dark, Retro Blue themes</string>
     <!-- Sound & display settings screen, theme setting value to automatically switch between a light- or dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_auto">Automatic</string>
     <string name="keywords_display_night_mode">dark theme night mode dim screen invert brightness</string>
@@ -362,5 +363,8 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+<!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
+    <string name="night_mode_amify">AIM RETRO</string>
 
 </resources>
