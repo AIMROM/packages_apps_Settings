@@ -7956,4 +7956,11 @@
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state</string>
 
+    <!-- Freedomhub and substratum strings -->
+    <string name="header_category_custom">customizations</string>
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Customize device theme</string>
+    <string name="freedomhub_title">FreedomHub</string>
+    <string name="freedomhub_title_summary">Extra customizations</string>
+
 </resources>
