@@ -30,6 +30,7 @@
     <string name="AIMROM_about_info">About Us</string>
     <string name="AIMROM_about_info_summary">AIMROM is an aftermarket firmware based on LineageOS, with some added extras along the way.We are targeting a ROM that delivers exceptional performance, a balance of features,and a remarkable battery life</string>
     <string name="dev_info">About AIMROM</string>
+    <string name="dev_info_summary">Everything about AIMROM and its TEAM</string>
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Since the last update</string>
@@ -59,8 +60,12 @@
     <string name="AIMROM_github">Github</string>
     <string name="AIMROM_github_description">We are open source!</string>
     <string name="AIMROM_github_link">https://github.com/AIMROM/</string>
-
    
+  <!-- DONATE US PLOX -->
+    <string name="donate">Show your support</string>
+    <string name="donate_description">Donation is not necessary, but each and every penny from you will help us to pay server bills.</string>
+    <string name="donation_link">https://paypal.me/AIMroms</string>
+ 
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN is entered\nNote: Dont mess up Buddy will only work for 4 digit PIN !</string>
@@ -75,12 +80,13 @@
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
-
+    <string name="density_summary">Set custom Display density</string>
    <!-- Reset default wallpaper -->
     <string name="reset_wallpaper_notice">Default wallpaper restored</string>
 
 <!-- Sound & display settings screen, setting option name to change the user interface theme [CHAR LIMIT=30] -->
     <string name="night_mode_title">Theme</string>
+    
     <!-- Sound & display settings screen, setting option summary to change the user interface theme [CHAR LIMIT=100] -->
     <string name="night_mode_summary">%s</string>
     <!-- Sound & display settings screen, theme setting value to prefer a light-colored user interface [CHAR LIMIT=30] -->
