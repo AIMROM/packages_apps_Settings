@@ -37,8 +37,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <!-- Changelog -->
         <PreferenceScreen android:key="aim_changelog"
             android:title="@string/changelog_title"
-             android:icon="@drawable/ic_changelog_ico"
             android:summary="@string/changelog_summary"
+            android:icon="@drawable/ic_changelog_ico"
             android:fragment="com.android.settings.aim.fragments.Changelog" />
 
         <PreferenceScreen
@@ -77,7 +77,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                android:data="@string/AIMROM_github_link" />
         </PreferenceScreen>
 
-<PreferenceScreen
+    <PreferenceScreen
             android:title="@string/donate"
     android:summary="@string/donate_description"
     android:icon="@drawable/ic_donate_aim" >
@@ -184,17 +184,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 </PreferenceScreen>  
      
 <PreferenceScreen
+
             android:title="@string/main_13"
             android:summary="@string/main13_description"
             android:icon="@drawable/ic_devs_phone">
-</PreferenceScreen>
-
-        <PreferenceScreen  
+  </PreferenceScreen>
+  
+  <PreferenceScreen
             android:title="@string/main_14"
             android:summary="@string/main14_description"
-            android:icon="@drawable/ic_devs_phone">     
-     </PreferenceScreen> 
-     
+            android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>       
   
   <PreferenceScreen
@@ -202,8 +201,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main15_description"
             android:icon="@drawable/ic_devs_phone">
  </PreferenceScreen>
- 
-</PreferenceCategory>
      
   <PreferenceScreen
             android:title="@string/main_16"
@@ -277,9 +274,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main27_description"
             android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>
- 
-
-<PreferenceScreen
+     
+     <PreferenceScreen
             android:title="@string/main_28"
             android:summary="@string/main28_description"
             android:icon="@drawable/ic_devs_phone">
@@ -290,7 +286,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main29_description"
             android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>
-    
+     
    </PreferenceCategory>
 
 </PreferenceScreen>
