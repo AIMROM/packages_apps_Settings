@@ -39,6 +39,9 @@ import android.widget.Toast;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import com.android.settings.search.Index;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.DeviceInfoUtils;
@@ -88,7 +91,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_AIM_CHANGELOG = "aim_changelog";
     private static final String KEY_AIM_MAINTAINER = "aim_maintainer";
     private static final String PROPERTY_AIM_MAINTAINER = "ro.aim.maintainer";
-
+    private static final String KEY_AIM_UPDATES = "aim_updates";
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
     private static final String KEY_DEV_INFO = "dev_info";
@@ -164,6 +167,17 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_MOD_API_LEVEL).setEnabled(true);
         findPreference(KEY_AIM_CHANGELOG).setEnabled(true);
 
+
+        boolean supported = false;    
+        try {
+            supported = (getPackageManager().getPackageInfo("com.aim.ota", 0).versionCode >= 0);
+        } catch (NameNotFoundException e) {
+ 
+        } if (!supported) {
+            findPreference(KEY_AIM_UPDATES).setEnabled(false);    
+        } else {
+            findPreference(KEY_AIM_UPDATES).setEnabled(true);
+        }
 
 
         if (!SELinux.isSELinuxEnabled()) {

@@ -367,4 +367,7 @@
 <!-- Sound & display settings screen, theme setting value to prefer a dark-colored user interface [CHAR LIMIT=30] -->
     <string name="night_mode_amify">AIM RETRO</string>
 
+<!-- OTA -->
+    <string name="aimupdate_settings_title">Aim System updates</string>
+
 </resources>
