@@ -280,6 +280,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main28_description"
             android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>
+
+     <PreferenceScreen
+            android:title="@string/main_29"
+            android:summary="@string/main29_description"
+            android:icon="@drawable/ic_devs_phone">
+</PreferenceScreen>
      
    </PreferenceCategory>
 
