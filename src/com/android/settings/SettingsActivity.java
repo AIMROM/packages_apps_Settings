@@ -244,6 +244,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String MAGISK_FRAGMENT = "com.android.settings.MagiskManager";
 
+    private static final String AIMOTA_FRAGMENT = "com.android.settings.AIMOTA";
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -1075,6 +1077,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             return null;
         }
 
+        if (AIMOTA_FRAGMENT.equals(fragmentName)) {
+            Intent aimotaIntent = new Intent();
+            aimotaIntent.setClassName("com.aim.ota", "com.aim.ota.activities.MainActivity");
+            startActivity(aimotaIntent);
+            finish();
+            return null;
+        }
+
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -1178,7 +1188,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.SubstratumActivity.class.getName()),
                 subSupported, isAdmin, pm);
-				
+
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);
 
@@ -1191,6 +1201,17 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.MagiskActivity.class.getName()),
                 magiskSupported, isAdmin, pm);
+
+        // AIMOTA
+        boolean aimotaSupported = false;
+        try {
+            aimotaSupported = (getPackageManager().getPackageInfo("com.aim.ota", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.AimotaActivity.class.getName()),
+                aimotaSupported, isAdmin, pm);
+
 
         // Show scheduled power on and off if support
         boolean showTimerSwitch = false;

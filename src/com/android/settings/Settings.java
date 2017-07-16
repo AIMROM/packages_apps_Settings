@@ -171,5 +171,6 @@ public class Settings extends SettingsActivity {
     public static class freedomhubSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
     public static class MagiskActivity extends SettingsActivity { /* empty */ }
+    public static class AimotaActivity extends SettingsActivity { /* empty */ }
 
 }

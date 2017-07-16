@@ -369,5 +369,7 @@
 
 <!-- OTA -->
     <string name="aimupdate_settings_title">Aim System updates</string>
-
+    <string name="ota_title">System Updates</string>
+    <string name="ota_summary">Get latest updates</string>
+    <string name="header_category_ota">AIMROM UPDATE</string>
 </resources>

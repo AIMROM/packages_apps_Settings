@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 AIMROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:pathData="M -1 -1 H 25 V 25 H -1 V -1 Z" />
+    <path
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M12.058447,0.24779c-6.590185,0 -11.932609,5.26076
+-11.932609,11.749318s5.342424,11.749795 11.932609,11.749795s11.933083,-5.26091
+11.933083,-11.749795s-5.342844,-11.749318
+-11.933083,-11.749318zm4.729948,17.307479c-0.130804,0 -0.259979,-0.007111
+-0.387108,-0.019901c-0.116144,0.012791 -0.234224,0.019901
+-0.353872,0.019901l-2.995664,0l3.222239,-3.201352c0.18631,-0.18526
+0.244953,-0.468649 0.147106,-0.715702c-0.097622,-0.247203 -0.331341,-0.408737
+-0.591179,-0.408737l-1.587736,0l0,-3.341737c0,-0.402611 -0.33182,-0.729326
+-0.740726,-0.729326l-2.245887,0c-0.408905,0 -0.740727,0.326476
+-0.740727,0.729326l0,3.341737l-1.712707,0c-0.001261,0 -0.002718,0
+-0.003728,0c-0.352444,0 -0.637948,0.292741 -0.637948,0.654385c0,0.205999
+0.092442,0.389228 0.236832,0.509137l3.183039,3.162359l-4.788596,0c-1.743504,0
+-3.157035,-1.392019 -3.157035,-3.108454c0,-1.429999 0.980667,-2.633085
+2.315657,-2.995747c0.147501,-1.217338 1.19794,-2.161777
+2.473667,-2.161777c0.385818,0 0.75003,0.088986
+1.076052,0.24323c0.634274,-1.738011 2.322017,-2.980718
+4.305293,-2.980718c2.378338,0 4.332108,1.787583
+4.552631,4.072258c1.25527,0.581208 2.124807,1.837152
+2.124807,3.293387c-0.000082,2.009088 -1.654003,3.637731 -3.694412,3.637731z" />
+</vector>
