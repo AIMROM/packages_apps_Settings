@@ -140,12 +140,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main5_description"
             android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>
-
-<PreferenceScreen
-            android:title="@string/main_6"
-            android:summary="@string/main6_description"
-            android:icon="@drawable/ic_devs_phone">
-</PreferenceScreen>
      
 <PreferenceScreen
             android:title="@string/main_7"
