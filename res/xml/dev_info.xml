@@ -120,6 +120,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                android:data="https://forum.xda-developers.com/member.php?u=7550463" />
         </PreferenceScreen>
 
+</PreferenceCategory>
 
 <PreferenceCategory
               android:key="maintainers"
