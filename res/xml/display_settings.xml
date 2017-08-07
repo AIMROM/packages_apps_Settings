@@ -168,13 +168,13 @@
     </PreferenceCategory>
 
 
-<PreferenceCategory
+<!-- <PreferenceCategory
              android:title="@string/theme_title">
  
              <com.android.settings.display.ThemePreference
                  android:key="theme"
                  android:title="@string/theme" />
-         </PreferenceCategory>
+         </PreferenceCategory> -->
  
 
 </PreferenceScreen>
