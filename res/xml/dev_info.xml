@@ -295,6 +295,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:summary="@string/main33_description"
             android:icon="@drawable/ic_devs_phone">
 </PreferenceScreen>
+
+<PreferenceScreen
+            android:title="@string/main_34"
+            android:summary="@string/main34_description"
+            android:icon="@drawable/ic_devs_phone">
+</PreferenceScreen>
      
    </PreferenceCategory>
 
