@@ -3274,6 +3274,24 @@
                 android:value="com.android.settings.gestures.GlobalActionsPanelSettings" />
         </activity>
 
+        <!-- Freedomhub -->
+        <activity android:name=".Settings$FreedomhubActivity"
+            android:label="@string/freedomhub_title"
+            android:icon="@drawable/ic_homepage_freedomhub"
+            android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="19">
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings.action.SETTINGS"/>
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.aim.freedomhub.Freedomhub" />
+            <meta-data android:name="com.android.settings.summary"
+                android:resource="@string/freedomhub_summary"/>
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
