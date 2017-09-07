@@ -17,7 +17,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- System update settings - launches activity -->
+      <!-- Aim Rom Banner -->
+      <PreferenceScreen android:layout="@layout/banner" android:key="od_banner" />  
+
+      <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
@@ -65,7 +68,7 @@
                 android:key="device_model"
                 android:title="@string/model_info"
                 android:summary="@string/summary_placeholder"/>
-
+          
         <!-- Device firmware version -->
         <Preference android:key="firmware_version"
                 android:title="@string/firmware_version"
