@@ -18,7 +18,15 @@
         android:title="@string/about_settings">
 
       <!-- Aim Rom Banner -->
-      <PreferenceScreen android:layout="@layout/banner" android:key="od_banner" />  
+      <Preference 
+             android:layout="@layout/banner"
+             android:key="od_banner" />  
+
+      <!-- aim version -->
+      <Preference
+             android:key="aim_version"
+             android:title="@string/aim_version"
+             android:summary="@string/aim_version_default" />
 
       <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
@@ -29,7 +37,7 @@
         </Preference>
 
         <!-- Changelog -->
-        <PreferenceScreen
+        <Preference
             android:key="changelog"
             android:title="@string/changelog_title"
 	    android:summary="@string/changelog_summary"
@@ -102,6 +110,11 @@
                 android:key="kernel_version"
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
+
+        <!-- Build date -->
+        <Preference android:key="build_date"
+                android:title="@string/build_date"
+                android:summary="@string/build_date_default" />
 
         <!-- Detailed build version -->
         <Preference
