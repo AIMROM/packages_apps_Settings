@@ -27,4 +27,9 @@
    <!-- link to google play -->
    <string name="app_play_store">Google Play</string>
 
+<!-- Doze -->
+     <string name="doze_always_on_title">Always On Display</string>
+     <string name="doze_always_on_summary">Enable Ambient Displays always on setting</string>
+
+
 </resources>
