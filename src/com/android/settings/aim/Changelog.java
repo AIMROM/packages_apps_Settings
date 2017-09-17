@@ -32,6 +32,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -39,8 +40,9 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class Changelog extends Fragment {
 import com.android.internal.logging.nano.MetricsProto;
+
+public class Changelog extends SettingsPreferenceFragment {
 
     private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
@@ -98,9 +100,8 @@ import com.android.internal.logging.nano.MetricsProto;
         return scrollView;
     }
 
-     @Override
-     public int getMetricsCategory() {
-         return MetricsProto.MetricsEvent.AIM;
-     }
-
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.AIM;
+    }
 }
