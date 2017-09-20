@@ -17,6 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Aim Version -->
-    <string name="aim_version">AIM BUILD</string>
+    <string name="aim_version">AIM VERSION</string>
 
 </resources>
