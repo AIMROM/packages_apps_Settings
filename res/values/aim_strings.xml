@@ -31,8 +31,13 @@
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
-
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
+
+<!-- Wakeup options -->
+     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+ 
+
 </resources>
 
