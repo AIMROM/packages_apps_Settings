@@ -8679,5 +8679,8 @@
     <!-- The divider symbol between different parts of the notification header including spaces. not translatable [CHAR LIMIT=3] -->
     <string name="notification_header_divider_symbol_with_spaces" translatable="false">" • "</string>
 
+    <!-- Freedomhub strings -->
+    <string name="freedomhub_title">FreedomHub</string>
+    <string name="freedomhub_title_summary">Extra customizations</string>
 
 </resources>
