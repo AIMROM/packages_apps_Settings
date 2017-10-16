@@ -18,6 +18,8 @@ import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 
+import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
+
 import com.android.settings.core.PreferenceController;
 
 public class ProximityOnWakePreferenceController extends PreferenceController implements
@@ -41,17 +43,17 @@ public class ProximityOnWakePreferenceController extends PreferenceController im
     }
 
     @Override
-    public void updateState(Preference preference) {
-        int value = Settings.System.getInt(
-                mContext.getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 0);
-        ((SwitchPreference) preference).setChecked(value != 0);
-    }
-
-    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         boolean value = (Boolean) newValue;
         Settings.System.putInt(
-                mContext.getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, value ? 1 : 0);
+                mContext.getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, value ? 0 : 0);
         return true;
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        int value = Settings.System.getInt(
+                mContext.getContentResolver(), Settings.System.PROXIMITY_ON_WAKE, 0);
+        ((SystemSettingSwitchPreference) preference).setChecked(value != 0);
     }
 }
