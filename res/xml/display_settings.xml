@@ -115,12 +115,12 @@
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
 
-    <com.aim.freedomhub.preference.SecureSettingSwitchPreference
+<!--    <com.aim.freedomhub.preference.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary"
         android:dependency="doze"
-        android:defaultValue="false" />
+        android:defaultValue="false" /> -->
 
     <SwitchPreference
         android:key="tap_to_wake"
