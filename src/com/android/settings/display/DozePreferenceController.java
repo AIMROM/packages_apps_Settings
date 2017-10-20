@@ -25,6 +25,8 @@ import com.android.settings.core.PreferenceController;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 
+import com.aim.freedomhub.Utils;
+
 import static android.provider.Settings.Secure.DOZE_ENABLED;
 import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_AMBIENT_DISPLAY;
 
@@ -73,6 +75,6 @@ public class DozePreferenceController extends PreferenceController implements
             name = mContext.getResources().getString(
                     com.android.internal.R.string.config_dozeComponent);
         }
-        return !TextUtils.isEmpty(name);
+        return !TextUtils.isEmpty(name) && !Utils.isPackageInstalled(mContext, "com.cyanogenmod.settings.doze");
     }
 }
