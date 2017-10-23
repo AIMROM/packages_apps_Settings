@@ -24,8 +24,10 @@
      <string name="dev2_description">Co-Founder/Head Developer, Z010D maintainer</string>
      <string name="dev_3">Raman Verma (Shadowreaper1)</string>
      <string name="dev3_description">Lead Developer, Z010D Maintainer</string>
- 
-     <!-- Social -->
+     <string name="dev_4">klabit87</string>
+     <string name="dev4_description">Developer</string> 
+
+    <!-- Social -->
      <string name="social_header">#Lets Aim-ify</string>
      <string name="AIMROM_web">Website</string>
      <string name="AIMROM_web_description">Official AIM ROM website for Infos and more.</string>

@@ -11,73 +11,72 @@ implied.
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-
 <PreferenceScreen
-xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="About AIMROM">
 
 <PreferenceCategory
               android:key="about"
               android:title="@string/AIMROM_about_info" >
 
-        <PreferenceScreen
-    android:summary="@string/AIMROM_about_info_summary" >
-            <intent
+        <Preference
+            android:summary="@string/AIMROM_about_info_summary" >
+             <intent
                android:action="android.intent.action.VIEW"
                android:data="@string/AIMROM_google_plus_link" />              
-      </PreferenceScreen>
+	</Preference>
+</PreferenceCategory>
 
-     </PreferenceCategory>
 
 <PreferenceCategory
    android:key="AIMROM_social"
               android:title="@string/social_header" >
 
-        <PreferenceScreen
+        <Preference
             android:title="@string/AIMROM_web"
     android:summary="@string/AIMROM_web_description"
     android:icon="@drawable/ic_social_web" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="@string/AIMROM_web_link" />
-        </PreferenceScreen>
+       </Preference>
 
-        <PreferenceScreen
+        <Preference
             android:title="@string/AIMROM_google_plus"
     android:summary="@string/AIMROM_google_plus_description"
     android:icon="@drawable/ic_social_google_plus" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="@string/AIMROM_google_plus_link" />
-        </PreferenceScreen>
+    </Preference>
 
-        <PreferenceScreen
+
+        <Preference
             android:title="@string/AIMROM_telegram"
     android:summary="@string/AIMROM_telegram_description"
     android:icon="@drawable/ic_social_telegram" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="@string/AIMROM_telegram_link" />
-        </PreferenceScreen>
+		</Preference>
 
-        <PreferenceScreen
+        <Preference
             android:title="@string/AIMROM_github"
     android:summary="@string/AIMROM_github_description"
     android:icon="@drawable/ic_social_github" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="@string/AIMROM_github_link" />
-        </PreferenceScreen>
+	</Preference>
 
-<PreferenceScreen
+<Preference
              android:title="@string/donate"
      android:summary="@string/donate_description"
      android:icon="@drawable/ic_donate_aim" >
      <intent
                 android:action="android.intent.action.VIEW"
                 android:data="@string/donation_link" />
-         </PreferenceScreen>
+         </Preference>
  
 </PreferenceCategory>
 
@@ -86,47 +85,61 @@ xmlns:android="http://schemas.android.com/apk/res/android"
               android:key="AIMROM_dev"
               android:title="@string/devs_header" >
 
-        <PreferenceScreen
+        <Preference
             android:title="@string/dev_1"
     android:summary="@string/dev1_description"
     android:icon="@drawable/ic_devs_pc" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="https://plus.google.com/communities/111507505190229665939" />
-        </PreferenceScreen>
+	</Preference>
+        
 
-       <PreferenceScreen
+       <Preference
             android:title="@string/dev_2"
     android:summary="@string/dev2_description"
     android:icon="@drawable/ic_devs_pc" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="https://plus.google.com/108470470067103585242" />
-        </PreferenceScreen>
+	</Preference>        
 
- <PreferenceScreen
+ <Preference
             android:title="@string/dev_3"
     android:summary="@string/dev3_description"
     android:icon="@drawable/ic_devs_pc" >
     <intent
                android:action="android.intent.action.VIEW"
                android:data="https://forum.xda-developers.com/member.php?u=7550463" />
-        </PreferenceScreen>
+	</Preference>
+        
+<Preference
+           android:title="@string/dev_4"
+     android:summary="@string/dev4_description"
+     android:icon="@drawable/ic_devs_pc" >
+     <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://forum.xda-developers.com/member.php?u=4168602" />	
+</Preference>
 
 </PreferenceCategory>
+
+
+
 
 <!-- maintainers -->
 <PreferenceCategory
                android:key="maintainers"
                android:title="@string/maintainers_header" >
  
- <PreferenceScreen
+ <Preference
              android:title="@string/main_5"
              android:summary="@string/main_description"
-             android:icon="@drawable/ic_devs_phone">
- </PreferenceScreen>
+             android:icon="@drawable/ic_devs_phone">  
+</Preference>
+
  
- 
-     </PreferenceCategory>
+
+   </PreferenceCategory>
  
 </PreferenceScreen>

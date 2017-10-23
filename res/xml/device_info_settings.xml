@@ -18,7 +18,7 @@
         android:title="@string/about_settings">
 
       <!-- Aim Rom Banner -->
-      <PreferenceScreen 
+      <Preference
            android:layout="@layout/banner" 
            android:key="od_banner" />  
 
