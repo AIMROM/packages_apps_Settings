@@ -17,8 +17,8 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-      <!-- Aim Rom Banner  -->
-      <PreferenceScreen
+      <!-- Aim Rom Banner -->
+      <Preference
            android:layout="@layout/banner" 
            android:key="od_banner" />  
 
