@@ -333,5 +333,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 </PreferenceScreen>
     
    </PreferenceCategory>
+            android:title="@string/main_40"
+            android:summary="@string/main40_description"
+            android:icon="@drawable/ic_devs_phone">
+</PreferenceScreen>
+
+   </PreferenceCategory>
 
 </PreferenceScreen>
