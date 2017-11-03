@@ -122,48 +122,74 @@ implied.
                 android:data="https://forum.xda-developers.com/member.php?u=4168602" />	
 </Preference>
 
-</PreferenceCategory>
-
-
-
-
-<!-- maintainers -->
-<PreferenceCategory
-               android:key="maintainers"
-               android:title="@string/maintainers_header" >
+       </PreferenceCategory>
  
- <Preference
-             android:title="@string/main_5"
-             android:summary="@string/main5_description"
-             android:icon="@drawable/ic_devs_phone">  
-</Preference>
 
- <Preference
-            android:title="@string/main_7"
-            android:summary="@string/main7_description"
-            android:icon="@drawable/ic_devs_phone">
-</Preference>
-
- <Preference
-            android:title="@string/main_8"
-            android:summary="@string/main8_description"
-            android:icon="@drawable/ic_devs_phone">
-</Preference>
-
- <Preference
-            android:title="@string/main_9"
-            android:summary="@string/main9_description"
-            android:icon="@drawable/ic_devs_phone">
-</Preference> 
-
- <Preference
-            android:title="@string/main_10"
-            android:summary="@string/main10_description"
-            android:icon="@drawable/ic_devs_phone">
-</Preference>
+<!-- Great designer -->
+<PreferenceCategory
+               android:key="AIMROM_designers"
+               android:title="@string/designers_header" >
+  
+        <Preference
+             android:title="@string/designer_title"
+       android:summary="@string/designers_description"
+       android:icon="@drawable/ic_design">
+       
+    </Preference>
+  
+ </PreferenceCategory>
 
 
+<!-- Chunkz of our team -->
+<PreferenceCategory
+              android:key="cutipies"
+              android:title="@string/cutie_pies" >
+<Preference
+       android:title="@string/cutipie1"
+       android:summary="@string/cutipie1_description"
+       android:icon="@drawable/ic_cutiepie">
+       <intent
+                  android:action="android.intent.action.VIEW"
+                  android:data="https://github.com/krasCGQ" />
+         </Preference>
+ 
+
+<Preference
+       android:title="@string/cutipie2"
+       android:summary="@string/cutipie2_description"
+       android:icon="@drawable/ic_cutiepie">
+       <intent
+                  android:action="android.intent.action.VIEW"
+                  android:data="https://github.com/rpingat" />
+         </Preference>
+ 
+
+<Preference
+       android:title="@string/cutipie3"
+       android:summary="@string/cutipie3_description"
+       android:icon="@drawable/ic_cutiepie">
+       <intent
+                  android:action="android.intent.action.VIEW"
+                  android:data="https://github.com/Sathish2026" />
+         </Preference>
+  
 
    </PreferenceCategory>
- 
+
+
+ <PreferenceCategory
+               android:key="aim_maintainers"
+               android:title="@string/official_devices" >
+
+        <Preference
+              android:key="Maintainers"
+              android:fragment="com.android.settings.aim.Maintainers"
+              android:icon="@drawable/ic_maintainers"
+ 	      android:title="@string/maintainers_header" 
+	      android:summary="@string/maintainers_summary"/>
+  			
+      </Preference>
+
+         </PreferenceCategory>
+
 </PreferenceScreen>

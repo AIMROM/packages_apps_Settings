@@ -26,8 +26,20 @@
      <string name="dev3_description">Lead Developer, Z010D Maintainer</string>
      <string name="dev_4">klabit87</string>
      <string name="dev4_description">Developer</string> 
-
-    <!-- Social -->
+              
+     <!-- honored mentions -->
+     <string name="designer_title">Mohan Sekar</string>
+     <string name="designers_header">Designers</string>
+     <string name="designers_description">Wallpapers,Bootanimations,Logos</string>
+     <!-- cutiepies --> 
+     <string name="cutie_pies">CutiePies of Aimrom family</string>
+     <string name="cutipie1">Albert I (krasCGQ)</string>
+     <string name="cutipie1_description">Derp Fixer and PR nibba</string>
+     <string name="cutipie2">Ravi pingat</string>
+     <string name="cutipie2_description">Joker and chureka maintainer</string>
+     <string name="cutipie3">Sathish</string>
+     <string name="cutipie3_description">Pr boi</string>
+     <!-- Social -->
      <string name="social_header">#Lets Aim-ify</string>
      <string name="AIMROM_web">Website</string>
      <string name="AIMROM_web_description">Official AIM ROM website for Infos and more.</string>
