@@ -19,6 +19,7 @@
          <ImageView
              android:layout_width="fill_parent" 
              android:layout_height="wrap_content" 
+             android:padding="4dp"
              android:src="@drawable/banner"
              android:scaleType="centerInside"
              android:adjustViewBounds="true" />
