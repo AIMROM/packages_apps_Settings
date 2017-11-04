@@ -186,7 +186,7 @@ implied.
               android:fragment="com.android.settings.aim.Maintainers"
               android:icon="@drawable/ic_maintainers"
  	      android:title="@string/maintainers_header" 
-	      android:summary="@string/maintainers_summary"/>
+	      android:summary="@string/maintainers_summary" >
   			
       </Preference>
 
