@@ -3127,17 +3127,6 @@
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/freedomhub_title_summary"/>
         </activity>
-		<!-- Freedomhub QS Tile -->
-		<service
-			android:name=".FreedomHubQS"
-			android:icon="@drawable/ic_settings_freedomhub"
-			android:label="@string/freedomhub_title"
-			android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-			<intent-filter>
-				<action 
-					android:name="android.service.quicksettings.action.QS_TILE" />
-			</intent-filter>
-        </service>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
