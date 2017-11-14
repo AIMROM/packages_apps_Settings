@@ -60,4 +60,7 @@
      <string name="themes_dashboard_summary">Manage your themes</string>
  
 
+<!-- DUI -->
+     <string name="navigation_title">Navigation</string>
+
 </resources>

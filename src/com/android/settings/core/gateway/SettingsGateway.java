@@ -134,6 +134,11 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.aim.freedomhub.Amify;
 
+import com.aim.freedomhub.dui.FlingSettings;
+import com.aim.freedomhub.categories.NavbarSettings;
+import com.aim.freedomhub.dui.PulseSettings;
+import com.aim.freedomhub.dui.SmartbarSettings;
+
 public class SettingsGateway {
 
     /**
@@ -256,7 +261,11 @@ public class SettingsGateway {
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
             Amify.class.getName()
-    };
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
+   };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
             // Home page
@@ -294,5 +303,10 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.freedomhubSettingsActivity.class.getName(),
+  	    Settings.NavigationSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName()
+
     };
 }
