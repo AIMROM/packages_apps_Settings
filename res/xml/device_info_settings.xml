@@ -34,12 +34,13 @@
                  android:title="@string/aim_version"
                  android:summary="@string/device_info_default" />
  
-      <!-- System update settings - launches activity -->
-        <Preference android:key="additional_system_update_settings"
-                    android:title="@string/additional_system_update_settings_list_item_title">
+      <!-- Aim System update settings - launches activity -->
+        <Preference android:key="aim_updates"
+                    android:title="@string/aimupdate_settings_title"
+		    android:summary="@string/aimupdate_summary">
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="@string/additional_system_update"
-                    android:targetClass="@string/additional_system_update_menu" />
+                    android:targetPackage="com.aim.ota"
+                    android:targetClass="com.aim.ota.activities.MainActivity" />
         </Preference>
 
         <!-- Changelog -->
