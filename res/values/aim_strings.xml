@@ -140,4 +140,9 @@
      <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
      <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
+<!-- OTA -->
+  <string name="aimupdate_settings_title">Aim System updates</string> 
+   <string name="aimupdate_summary">Get latest System updates</string>
+
 </resources>
+ 
