@@ -55,4 +55,9 @@
   <string name="aimupdate_settings_title">Aim System Updates</string> 
    <string name="aimupdate_summary">Get Latest System Updates</string>
 
+<!-- Substratum -->
+     <string name="themes_title">Themes</string>
+     <string name="themes_dashboard_summary">Manage your themes</string>
+ 
+
 </resources>

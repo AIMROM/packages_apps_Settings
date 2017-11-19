@@ -194,4 +194,7 @@ public class Settings extends SettingsActivity {
     // AIMROM Additions.
     public static class freedomhubSettingsActivity extends SettingsActivity {}
 
+    //subs
+    public static class ThemesActivity extends SettingsActivity {}
+
 }
