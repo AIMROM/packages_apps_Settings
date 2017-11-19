@@ -160,6 +160,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final int REQUEST_SUGGESTION = 42;
 
+    private static final String THEMES_FRAGMENT = "com.android.settings.Themes";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -746,6 +748,14 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+        if (THEMES_FRAGMENT.equals(fragmentName)) {
+            Intent themesIntent = new Intent();
+            themesIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(themesIntent);
+            finish();
+            return null;
+        }
+        
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -849,6 +859,16 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.WifiDisplaySettingsActivity.class.getName()),
                 WifiDisplaySettings.isAvailable(this), isAdmin);
 
+
+        boolean themesSupported = false;
+        try {
+            themesSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.ThemesActivity.class.getName()),
+                themesSupported, isAdmin);
+ 
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
             // When on restricted users, disable all extra categories (but only the settings ones).
