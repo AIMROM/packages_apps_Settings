@@ -19,11 +19,13 @@ package com.android.settings.deviceinfo;
 import android.content.Context;
 
 import com.android.settings.R;
-import com.android.settings.core.PreferenceController;
 
 import com.android.settings.development.DevelopmentSettings;
+import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settingslib.core.AbstractPreferenceController;
 
-public class OTAPreferenceController extends PreferenceController {
+public class OTAPreferenceController extends AbstractPreferenceController
+                implements PreferenceControllerMixin {
 
     private static final String KEY_AIM_UPDATES = "aim_updates";
     Context mContext;

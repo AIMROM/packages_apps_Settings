@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 AIM ROM
+ * Copyright (C) 2017 AIMROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,15 +26,15 @@ import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.settings.core.PreferenceController;
-import com.android.settings.core.lifecycle.Lifecycle;
-import com.android.settings.core.lifecycle.LifecycleObserver;
-import com.android.settings.core.lifecycle.events.OnResume;
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.RestrictedLockUtils;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.core.lifecycle.LifecycleObserver;
+import com.android.settingslib.core.lifecycle.events.OnResume;
 
-
-public class AimVersionPreferenceController extends PreferenceController
-        implements LifecycleObserver, OnResume {
+public class AimVersionPreferenceController extends AbstractPreferenceController implements
+        PreferenceControllerMixin, LifecycleObserver, OnResume {
 
     private static final String TAG = "AimVersionPref";
     private static final String KEY_AIM_VERSION = "aim_version";
@@ -113,4 +113,3 @@ public class AimVersionPreferenceController extends PreferenceController
         return false;
     }
 }
-

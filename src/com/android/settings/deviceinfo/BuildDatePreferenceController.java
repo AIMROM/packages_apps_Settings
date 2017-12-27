@@ -22,9 +22,10 @@ import android.os.SystemProperties;
 import android.support.v7.preference.Preference;
 import android.text.TextUtils;
 
-import com.android.settings.core.PreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
 
-public class BuildDatePreferenceController extends PreferenceController {
+public class BuildDatePreferenceController extends AbstractPreferenceController implements PreferenceControllerMixin {
 
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String PROPERTY_BUILD_DATE = "ro.build.date";
