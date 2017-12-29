@@ -35,8 +35,10 @@
     <string name="app_play_store">Google Play</string>
 
 <!-- Wakeup options -->
-     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
-     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+     <string name="wakeup_when_plugged_unplugged_title">Wake up on plug</string>
+     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string> 
+     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
+     <string name="vibration_on_charge_state_changed_summary">Vibrate when connecting or disconnecting a power source</string>
  
 <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
      <string name="show_cpu_info">Show CPU info</string>
