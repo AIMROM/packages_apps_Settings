@@ -43,6 +43,21 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
     private List<Tile> mSuggestions;
     private final IconCache mCache;
     private final List<String> mSuggestionsShownLogged;
+    private List<String> aimInfo;
+
+
+    public SuggestionAdapter(Context c, List<String> infos){
+
+        mContext = c;
+        aimInfo = infos;
+        mMetricsFeatureProvider=null;
+        mSuggestionFeatureProvider=null;
+        mCache=null;
+        mSuggestionsShownLogged=null;
+
+
+    }
+
 
     public SuggestionAdapter(Context context, List<Tile> suggestions,
             List<String> suggestionsShownLogged) {
@@ -68,6 +83,19 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
         final Tile suggestion = (Tile) mSuggestions.get(position);
         final String suggestionId = mSuggestionFeatureProvider.getSuggestionIdentifier(
                 mContext, suggestion);
+
+        //aimrom box
+
+        if(aimInfo.size()!=0){
+
+            holder.title.setText(aimInfo.get(0));
+            holder.summary.setText(aimInfo.get(1));
+            holder.title.setVisibility(View.VISIBLE);
+            holder.summary.setVisibility(View.VISIBLE);
+
+
+        }
+
         // This is for cases when a suggestion is dismissed and the next one comes to view
         if (!mSuggestionsShownLogged.contains(suggestionId)) {
             mMetricsFeatureProvider.action(

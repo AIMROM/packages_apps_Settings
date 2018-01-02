@@ -9060,4 +9060,8 @@
 
     <!-- Freedomhub strings -->
     <string name="freedomhub_title_summary">Extra customizations</string>
+
+    <string name="aim_one">AIM 7.6.8</string>
+    <string name="aim_two">Improoved color schemes added adaptive icons support and more. Find out whats new in the latest version of AIM.</string>
+
 </resources>

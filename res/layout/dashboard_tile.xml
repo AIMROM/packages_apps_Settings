@@ -30,6 +30,7 @@
         android:layout_width="@dimen/dashboard_tile_image_size"
         android:layout_height="@dimen/dashboard_tile_image_size"
         android:scaleType="centerInside"
+        android:tint="#000000"
         android:layout_marginStart="@dimen/dashboard_tile_image_margin"
         android:layout_marginEnd="@dimen/dashboard_tile_image_margin" />
 
