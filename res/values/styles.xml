@@ -366,7 +366,7 @@
 
     <style name="PreviewPagerPageIndicator">
         <item name="dotGap">8dp</item>
-        <item name="pageIndicatorColor">?android:attr/colorControlNormal</item>
+        <item name="pageIndicatorColor">#424242</item>
         <item name="currentPageIndicatorColor">?android:attr/colorControlActivated</item>
     </style>
 

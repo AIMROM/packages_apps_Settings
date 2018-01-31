@@ -9059,5 +9059,5 @@
     <string name="disabled_low_ram_device">This feature is not available on this device</string>
 
     <!-- Freedomhub strings -->
-    <string name="freedomhub_title_summary">Extra customizations</string>
+    <string name="freedomhub_title_summary">Extra UI/UX customizations</string>
 </resources>
