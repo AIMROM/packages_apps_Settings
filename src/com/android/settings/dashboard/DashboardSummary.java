@@ -16,8 +16,13 @@
 
 package com.android.settings.dashboard;
 
+
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,9 +32,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.Aboutaimrom;
 import com.android.settings.R;
+import com.android.settings.aim.Changelog;
 import com.android.settings.core.InstrumentedFragment;
 import com.android.settings.dashboard.conditional.Condition;
 import com.android.settings.dashboard.conditional.ConditionManager;
@@ -52,6 +62,8 @@ import com.android.settingslib.suggestions.SuggestionParser;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class DashboardSummary extends InstrumentedFragment
         implements CategoryListener, ConditionListener,
         FocusListener, SuggestionDismissController.Callback {
@@ -59,6 +71,7 @@ public class DashboardSummary extends InstrumentedFragment
     private static final boolean DEBUG_TIMING = false;
     private static final int MAX_WAIT_MILLIS = 700;
     private static final String TAG = "DashboardSummary";
+    public static final String AIM_ROM_BOX = "itsFirst";
 
 
     private static final String EXTRA_SCROLL_POSITION = "scroll_position";
@@ -76,6 +89,11 @@ public class DashboardSummary extends InstrumentedFragment
     private SuggestionFeatureProvider mSuggestionFeatureProvider;
     private boolean isOnCategoriesChangedCalled;
     private boolean mOnConditionsChangedCalled;
+    private ImageView aimIcon;
+    private TextView aimTitle;
+    private TextView aimSummary;
+    private TextView fa;
+    private TextView sa;
 
     @Override
     public int getMetricsCategory() {
@@ -87,7 +105,7 @@ public class DashboardSummary extends InstrumentedFragment
         long startTime = System.currentTimeMillis();
         super.onCreate(savedInstanceState);
         final Activity activity = getActivity();
-        mDashboardFeatureProvider = FeatureFactory.getFactory(activity)
+	mDashboardFeatureProvider = FeatureFactory.getFactory(activity)
                 .getDashboardFeatureProvider(activity);
         mSuggestionFeatureProvider = FeatureFactory.getFactory(activity)
                 .getSuggestionFeatureProvider(activity);
@@ -168,7 +186,7 @@ public class DashboardSummary extends InstrumentedFragment
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         return inflater.inflate(R.layout.dashboard, container, false);
     }
 
@@ -185,7 +203,51 @@ public class DashboardSummary extends InstrumentedFragment
     @Override
     public void onViewCreated(View view, Bundle bundle) {
         long startTime = System.currentTimeMillis();
-        mDashboard = view.findViewById(R.id.dashboard_container);
+	
+	mDashboard = view.findViewById(R.id.dashboard_container);
+
+
+        //aimrom
+
+        aimIcon = view.findViewById(R.id.icon);
+        aimTitle = view.findViewById(R.id.title);
+        aimSummary = view.findViewById(R.id.summary);
+        sa = view.findViewById(R.id.second_action);
+        fa = view.findViewById(R.id.first_action);
+        //aimIcon.setImageDrawable(R.drawable.ic_settings_about);
+    //    aimTitle.setText("AIM ROM HERE");
+        fa.setText("Changelog");
+        sa.setText("Dismiss");
+        View lay = view.findViewById(R.id.aim_romC);
+        lay.setVisibility(View.GONE);
+
+	//displaying the new updated rom box
+        SharedPreferences prefs = getContext().getSharedPreferences(AIM_ROM_BOX, MODE_PRIVATE);
+        String restoredText = prefs.getString("firstrun", null);
+        if (restoredText != null) {
+
+            lay.setVisibility(View.GONE);
+
+
+        }else{
+
+            lay.setVisibility(View.VISIBLE);
+
+        }
+
+        sa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewx) {
+
+                SharedPreferences.Editor editor = getContext().getSharedPreferences(AIM_ROM_BOX,MODE_PRIVATE).edit();
+                editor.putString("firstrun", "yes");
+                editor.apply();
+            	lay.setVisibility(View.GONE);
+            }
+        });
+
+
+
         mLayoutManager = new LinearLayoutManager(getContext());
         mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         if (bundle != null) {
@@ -196,7 +258,7 @@ public class DashboardSummary extends InstrumentedFragment
         mDashboard.setHasFixedSize(true);
         mDashboard.setListener(this);
         mAdapter = new DashboardAdapter(getContext(), bundle, mConditionManager.getConditions(),
-            mSuggestionParser, this /* SuggestionDismissController.Callback */);
+                mSuggestionParser, this /* SuggestionDismissController.Callback */);
         mDashboard.setAdapter(mAdapter);
         mDashboard.setItemAnimator(new DashboardItemAnimator());
         mSummaryLoader.setSummaryConsumer(mAdapter);

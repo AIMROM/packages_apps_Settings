@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,17 +13,53 @@
      limitations under the License.
 -->
 
-<com.android.settings.dashboard.conditional.FocusRecyclerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dashboard_container"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipChildren="false"
-    android:clipToPadding="false"
-    android:focusable="false"
-    android:paddingStart="@dimen/dashboard_padding_start"
-    android:paddingEnd="@dimen/dashboard_padding_end"
-    android:paddingTop="@dimen/dashboard_padding_top"
-    android:paddingBottom="@dimen/dashboard_padding_bottom"
-    android:scrollbars="vertical"/>
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/aim_romC"
+                android:visibility="gone"
+                layout="@layout/aim_popup" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <com.android.settings.dashboard.conditional.FocusRecyclerView
+                android:id="@+id/dashboard_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:focusable="false"
+                android:paddingBottom="@dimen/dashboard_padding_bottom"
+                android:paddingEnd="@dimen/dashboard_padding_end"
+                android:paddingStart="@dimen/dashboard_padding_start"
+                android:paddingTop="@dimen/dashboard_padding_top"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

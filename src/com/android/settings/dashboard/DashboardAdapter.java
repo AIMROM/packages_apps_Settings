@@ -443,6 +443,22 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             int position) {
         // If there is suggestions to show, it will be at position 0 as we don't show the suggestion
         // header anymore.
+
+
+        int ixx = 0;
+        List<String> aimRom = new ArrayList<String>();
+        aimRom.add("aim");
+        aimRom.add("this is a demo toast");
+
+        if(ixx == 0){
+
+            mSuggestionAdapter = new SuggestionAdapter(mContext, aimRom);
+
+            mSuggestionDismissHandler = new SuggestionDismissController(mContext,
+                    holder.data, mSuggestionParser, mCallback);
+            holder.data.setAdapter(mSuggestionAdapter);
+        }
+
         final List<Tile> suggestions = mDashboardData.getSuggestions();
         if (position == SUGGESTION_CONDITION_HEADER_POSITION
                 && suggestions != null && suggestions.size() > 0) {
