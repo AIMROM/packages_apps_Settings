@@ -51,47 +51,59 @@ implied.
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_6"
             android:summary="@string/main6_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_7"
             android:summary="@string/main7_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_8"
             android:summary="@string/main8_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_9"
             android:summary="@string/main9_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_10"
             android:summary="@string/main10_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_11"
             android:summary="@string/main11_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
-<Preference
+ <Preference
             android:title="@string/main_12"
             android:summary="@string/main12_description"
             android:icon="@drawable/ic_devs_phone">
 </Preference>  
+
+ <Preference
+            android:title="@string/main_13"
+            android:summary="@string/main13_description"
+            android:icon="@drawable/ic_devs_phone">
+</Preference>
+
+ <Preference
+            android:title="@string/main_14"
+            android:summary="@string/main14_description"
+            android:icon="@drawable/ic_devs_phone">
+</Preference>
 
    </PreferenceCategory>
  
