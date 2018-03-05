@@ -105,6 +105,12 @@ implied.
             android:icon="@drawable/ic_devs_phone">
 </Preference>
 
+ <Preference
+            android:title="@string/main_15"
+            android:summary="@string/main15_description"
+            android:icon="@drawable/ic_devs_phone">
+</Preference>
+
    </PreferenceCategory>
  
 </PreferenceScreen>
