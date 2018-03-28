@@ -162,9 +162,6 @@
      <string name="alert_on_charged_level_90">"90%"</string>
      <string name="alert_on_charged_level_99">"99%"</string>
  
-<!-- poor man battery style -->
-     <string name="battery_image">Battery image</string>
-     <string name="battery_image_description">Show battery image in status bar</string>
 
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
