@@ -55,4 +55,7 @@
     <!-- Device Codename -->
     <string name="about_device_name">Device Codename</string>
 
+    <!-- AIM maintainer -->
+    <string name="maintainer">Maintainer</string>
+
 </resources>
