@@ -32,37 +32,34 @@
 <string name="main_5">Shamith</string>
 <string name="main5_description">Moto G5 Plus (potter)</string>
 
-<string name="main_6">Arghya Chanda</string>
-<string name="main6_description">Lenovo P2 (kuntao)</string> 
+<string name="main_6">Chirayu Agrawal</string>
+<string name="main6_description">Moto G5S Plus (sanders)</string>
 
-<string name="main_7">Chirayu Agrawal</string>
-<string name="main7_description">Moto G5S Plus (sanders)</string>
+<string name="main_7">Ayush Dubey</string>
+<string name="main7_description">Xiaomi Redmi 2 (wt88047)</string>
 
-<string name="main_8">Ayush Dubey</string>
-<string name="main8_description">Xiaomi Redmi 2 (wt88047)</string>
+<string name="main_8">Vimal Raj</string>
+<string name="main8_description">Xiaomi Redmi Note 4 (mido)</string>
 
-<string name="main_9">Vimal Raj</string>
-<string name="main9_description">Xiaomi Redmi Note 4 (mido)</string>
+<string name="main_9">Sarvesh</string>
+<string name="main9_description">Xiaomi Redmi Note 3 (kenzo)</string>
 
-<string name="main_10">Sarvesh</string>
-<string name="main10_description">Xiaomi Redmi Note 3 (kenzo)</string>
+<string name="main_10">Vinesh Iyappan</string>
+<string name="main10_description">Moto G4 Plus (athene)</string>
 
-<string name="main_11">Vinesh Iyappan</string>
-<string name="main11_description">Moto G4 plus (athene)</string>
+<string name="main_11">Anirudh Gupta</string>
+<string name="main11_description">LGE Nexus 5X (bullhead)</string>
 
-<string name="main_12">Anirudh Gupta</string>
-<string name="main12_description">LGE Nexus 5X (bullhead)</string>
+<string name="main_12">aragon12</string>
+<string name="main12_description">Xiaomi Redmi 3S/Prime/3X (land)</string>
 
-<string name="main_13">aragon12</string>
-<string name="main13_description">Xiaomi Redmi 3S/Prime/3X (land)</string>
+<string name="main_13">Nidhun Balaji T.R. (nibaji)</string>
+<string name="main13_description">Lenovo Zuk Z2 Plus (z2_plus)</string>
 
-<string name="main_14">Nidhun Balaji T.R. (nibaji)</string>
-<string name="main14_description">Lenovo Zuk Z2 Plus (z2_plus)</string>
+<string name="main_14">Albert I (krasCGQ)</string>
+<string name="main14_description">Xiaomi Redmi 3/Pro (ido)</string>
 
-<string name="main_15">Albert I (krasCGQ)</string>
-<string name="main15_description">Xiaomi Redmi 3/Pro (ido)</string>
-
-<string name="main_16">Kunal Shah</string>
-<string name="main16_description">Xiaomi Mi A1 (tissot)</string>
+<string name="main_15">Kunal Shah</string>
+<string name="main15_description">Xiaomi Mi A1 (tissot)</string>
 
 </resources>
