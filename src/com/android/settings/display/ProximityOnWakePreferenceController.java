@@ -20,10 +20,11 @@ import android.support.v7.preference.Preference;
 
 import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
 
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.core.PreferenceController;
 
 public class ProximityOnWakePreferenceController extends PreferenceController implements
-        Preference.OnPreferenceChangeListener {
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
 
