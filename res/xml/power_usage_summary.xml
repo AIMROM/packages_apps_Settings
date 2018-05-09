@@ -49,7 +49,13 @@
             android:key="battery_saver_summary"
             android:title="@string/battery_saver"/>
 
-       <com.aim.freedomhub.preference.GlobalSettingSwitchPreference
+        <Preference
+             android:key="smart_pixels"
+             android:title="@string/smart_pixels_title"
+             android:summary="@string/smart_pixels_summary"
+             android:fragment="com.aim.freedomhub.fragments.SmartPixels" />
+
+	<com.aim.freedomhub.preference.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wakeup_when_plugged_unplugged_title"
             android:summary="@string/wakeup_when_plugged_unplugged_summary"

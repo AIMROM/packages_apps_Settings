@@ -140,7 +140,7 @@ import com.aim.freedomhub.dui.FlingSettings;
 import com.aim.freedomhub.categories.NavbarSettings;
 import com.aim.freedomhub.dui.PulseSettings;
 import com.aim.freedomhub.dui.SmartbarSettings;
-
+import com.aim.freedomhub.fragments.SmartPixels;
 public class SettingsGateway {
 
     /**
@@ -267,6 +267,7 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
+	    SmartPixels.class.getName(),
             ChooseLockPatternSize.class.getName(),
             RunningServices.class.getName()
     };
@@ -311,6 +312,7 @@ public class SettingsGateway {
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
+	    Settings.SmartPixelsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName()
     };
 }
