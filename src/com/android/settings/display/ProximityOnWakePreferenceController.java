@@ -18,7 +18,7 @@ import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 
-import com.gzr.wolvesden.preference.SystemSettingSwitchPreference;
+import com.aim.freedomhub.preference.SystemSettingSwitchPreference;
 
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.core.PreferenceController;
