@@ -64,7 +64,7 @@
         android:key="auto_rotate"
         android:title="@string/accelerometer_title" />
 
-    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+    <com.aim.freedomhub.preference.SystemSettingSwitchPreference
         android:key="proximity_on_wake"
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary"

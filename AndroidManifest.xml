@@ -3366,7 +3366,7 @@
                  <category android:name="android.intent.category.DEFAULT" />
              </intent-filter>
              <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                 android:value="com.gzr.wolvesden.fragments.SmartPixels" />
+                 android:value="com.aim.freedomhub.fragments.SmartPixels" />
          </activity>
  
 	<!-- Global navbar settings -->
