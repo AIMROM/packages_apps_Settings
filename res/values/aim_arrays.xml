@@ -47,22 +47,6 @@
         <item>1.30</item>
     </string-array>
 
-<!-- dark/white ui -->
-<string-array name="system_theme_style_entries" translatable="false">
-         <item>@string/system_theme_style_auto</item>
-         <item>@string/system_theme_style_light</item>
-         <item>@string/system_theme_style_dark</item>
-         <item>@string/system_theme_style_black</item>
-      </string-array>
- 
-     <string-array name="system_theme_style_values" translatable="false">
-         <item>0</item>
-         <item>1</item>
-         <item>2</item>
-         <item>3</item>
-     </string-array>
-
-
 <!-- Names of categories of app ops tabs -->
      <string-array name="app_ops_categories_aosp" translatable="false">
          <item>@string/app_ops_cat_location</item>
