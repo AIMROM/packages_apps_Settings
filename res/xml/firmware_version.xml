@@ -22,6 +22,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- AIM logo -->
+    <PreferenceScreen
+        android:layout="@layout/aim_logo"
+        android:key="aim_logo"
+        android:selectable="false" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -32,19 +38,11 @@
 
     <!-- Lineage version -->
     <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
+        android:key="aim_version"
+        android:title="@string/aim_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-
-    <!-- Lineage API version -->
-    <Preference
-        android:key="lineage_api_version"
-        android:title="@*lineageos.platform:string/lineage_api_level"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageApiVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AIMVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
