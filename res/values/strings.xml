@@ -7925,8 +7925,7 @@
     <string name="web_action_enable_title">Open links in apps</string>
 
     <!-- Summary text for enabling web actions. [CHAR_LIMIT=250] -->
-    <string name="web_action_enable_summary">Open links in supported apps, even if the
-      apps aren’t installed on your device</string>
+    <string name="web_action_enable_summary">Open links in supported apps, even if the apps aren’t installed on your device</string>
 
     <!-- Section title for the Web Action preference [CHAR LIMIT=60] -->
     <string name="web_action_section_title">Apps not installed</string>
@@ -7948,8 +7947,8 @@
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state</string>
 
-    <!-- Freedomhub and substratum strings -->
-    <string name="header_category_custom">customizations</string>
+    <!-- FreedomHub and substratum strings -->
+    <string name="header_category_custom">Customizations</string>
     <string name="substratum_title">Substratum</string>
     <string name="substratum_summary">Customize device theme</string>
     <string name="freedomhub_title">FreedomHub</string>
