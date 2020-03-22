@@ -297,6 +297,11 @@
             android:summary="@string/main35_description"
             android:icon="@drawable/ic_devs_phone" />
 
+        <PreferenceScreen
+            android:title="@string/main_36"
+            android:summary="@string/main36_description"
+            android:icon="@drawable/ic_devs_phone" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
