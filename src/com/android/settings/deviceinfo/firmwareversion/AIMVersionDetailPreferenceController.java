@@ -42,7 +42,7 @@ public class AIMVersionDetailPreferenceController extends BasePreferenceControll
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
-    private static final String KEY_AIM_VERSION_PROP = "ro.aim.display.version";
+    private static final String KEY_AIM_VERSION_PROP = "ro.mod.version";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
