@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- AIM Version -->
-    <string name="aim_version">AIM Version</string>
+    <string name="aim_version">AIM version</string>
 
     <!-- Freedomhub -->
     <string name="freedomhub_title">#LetsAIMify</string>
