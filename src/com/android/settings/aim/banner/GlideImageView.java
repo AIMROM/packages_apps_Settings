@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 AIM ROM
+ * Copyright (C) 2017 AIMROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

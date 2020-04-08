@@ -133,7 +133,7 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true" />
 
-        <!-- AIM ROM Maintainer -->
+        <!-- AIMROM Maintainer -->
         <com.android.settings.DividerPreference
                 android:key="aim_maintainer"
                 android:enabled="false"

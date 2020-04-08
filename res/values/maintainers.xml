@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- AIM ROM device maintainers -->
+    <!-- AIMROM device maintainers -->
     <string name="maintainers_header">Maintainers</string>
 
     <!-- Maintainers add from here -->

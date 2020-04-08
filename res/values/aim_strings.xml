@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- AIM ROM Version -->
+    <!-- AIMROM Version -->
     <string name="aim_version">AIM version</string>
     <string name="aim_version_default">Omega 1.0</string>
 
@@ -28,11 +28,11 @@
     <!-- Development Options Enabled by Default -->
     <string name="show_dev_already_enabled">Development settings are enabled by default.</string>
 
-    <!-- About AIM ROM -->
+    <!-- About AIMROM -->
     <string name="AIMROM_about_info">About Us</string>
-    <string name="AIMROM_about_info_summary">AIM ROM is an aftermarket firmware based on LineageOS, with some added extras along the way. We are targeting a ROM that delivers exceptional performance, a balance of features and a remarkable battery life.</string>
-    <string name="dev_info">About AIM ROM</string>
-    <string name="dev_info_summary">Everything about AIM ROM and the team</string>
+    <string name="AIMROM_about_info_summary">AIMROM is an aftermarket firmware based on LineageOS, with some added extras along the way. We are targeting a ROM that delivers exceptional performance, a balance of features and a remarkable battery life.</string>
+    <string name="dev_info">About AIMROM</string>
+    <string name="dev_info_summary">Everything about AIMROM and the team</string>
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">Since the last update</string>
@@ -51,10 +51,10 @@
     <!-- Social -->
     <string name="social_header">#LetsAIMify</string>
     <string name="AIMROM_web">Website</string>
-    <string name="AIMROM_web_description">Official AIM ROM website for downloads and more.</string>
+    <string name="AIMROM_web_description">Official AIMROM website for downloads and more.</string>
     <string name="AIMROM_web_link">https://aimrom.github.io</string>
     <string name="AIMROM_telegram">Telegram</string>
-    <string name="AIMROM_telegram_description">Discussion group for AIM ROM.</string>
+    <string name="AIMROM_telegram_description">Discussion group for AIMROM.</string>
     <string name="AIMROM_telegram_link">https://t.me/aimofficial</string>
     <string name="AIMROM_github">GitHub</string>
     <string name="AIMROM_github_description">We are open source!</string>
@@ -370,7 +370,7 @@
     <string name="aimupdate_settings_title">AIM system updates</string>
     <string name="ota_title">System updates</string>
     <string name="ota_summary">Get latest updates</string>
-    <string name="header_category_ota">AIM ROM updates</string>
+    <string name="header_category_ota">AIMROM updates</string>
 
     <!-- Setting: show CPU info -->
     <string name="show_cpu_info">Show CPU info</string>
